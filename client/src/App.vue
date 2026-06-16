@@ -6,8 +6,14 @@
         <router-link to="/" class="nav-link" :class="{ active: $route.path === '/' }">
           首页
         </router-link>
+        <router-link to="/topics" class="nav-link" :class="{ active: $route.path.startsWith('/topics') }">
+          专题导读
+        </router-link>
         <router-link to="/confess" class="nav-link" :class="{ active: $route.path === '/confess' }">
           倾诉秘密
+        </router-link>
+        <router-link to="/manage" class="nav-link" :class="{ active: $route.path === '/manage' }">
+          管理
         </router-link>
       </nav>
     </header>
